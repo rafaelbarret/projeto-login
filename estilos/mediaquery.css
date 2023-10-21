@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body{
+        background-image: linear-gradient(to top, #0D0D0D, #8C391B);
+    }
+
+    section#login {
+        width: 80vw;
+    }
+
+    div#formulario{
+        display: block;
+        text-align: center;
+        margin-top: 14%;
+    }
+
+    section#login > div#imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+    section#login > div#formulario{
+        float: right;
+        width: 70%;
+    }
+
+    /*Input*/
+    form > div.campo{
+        display: flex;
+        width: 70%;
+        height: 40px;
+    }
+
+    div.campo > input{
+        height: 95%;
+        transform: translateY(+1px);
+    }
+
+    form > div.campo > input{
+        width: 92%;
+    }
+
+    /*Botão de enviar*/
+
+    form > input[type=submit] {
+        display: block;
+        width: 70%;
+        height: 30px;    
+    }
+
+    form > a.botao {
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        height: 40px;
+    }
+    
+    
+}
+
+/*Dispositivos grandes*/
+
+@media screen and (min-width: 992px) {
+
+    body{
+        background-image: linear-gradient(to top, #0D0D0D, #8C391B);
+    }
+
+    section#login{
+        width: 950px;
+    }
+
+    div#formulario{
+        display: block;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    section#login > div#imagem{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#imagem > div#formulario{
+        float: left;
+        width: 50%;
+        
+    }
+    div#formulario > h1{
+        font-size: 2em;
+    }
+
+    div#formulario > p{
+        font-size: 1.2em;
+    }
+
+    form > div.campo{
+        width: 50%;
+        height: 40px;
+    
+    }
+    /*Input*/
+
+    div.campo > input{
+        width: calc(100% - 45px);
+        transform: translateY(-4px)
+    
+    }
+
+    /*Botão de enviar*/
+
+    form > input[type=submit] {
+        display: block;
+        width: 50%;
+        height: 30px;    
+    }
+
+    form > a.botao {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        height: 40px;
+    }
+    
+    
+    
+}
